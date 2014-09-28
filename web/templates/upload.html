@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Upload new File ({{ deployment_path }})</title>
+    </head>
+    <body>
+        <h1>Upload new data</h1>
+
+        <form action="{{ deployment_path }}{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <label for="patientId">Patient ID:</label>
+            <input type="text" id="patientId" name="patientId" value="" />
+            <br/>
+
+            <label for="timestamp">Audiogram time and time:</label>
+            <input type="text" id="timestamp" name="timestamp" value="" />
+            <br/>
+
+            <label for="imageFile">Audiogram image:</label>
+            <input type="file" id="imageFile" name="image">
+            <br/>
+
+            <input type="submit" value="Upload">
+        </form>
+    </body>
+</html>

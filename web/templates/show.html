@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <meta charset="UTF-8">
+    <title>NHS Hack Day</title>
+</head>
+<body onLoad="window.print();">
+    <h1>A header goes there</h1>
+    <table border="1">
+        <tr>
+            <td><strong>Test date:</strong></td>
+            <td>{{ timestamp }}</td>
+        </tr>
+        <tr>
+            <td><strong>Patient ID:</strong></td>
+            <td>{{ patient }}</td>
+        </tr>
+        <tr>
+            <td><strong>More metadata here:</strong></td>
+            <td>if required</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="{{ deployment_path }}/static/uploads/{{ image }}" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
