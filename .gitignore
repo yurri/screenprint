@@ -1,0 +1,5 @@
+cli/.idea/*
+web/.idea/*
+web/static/uploads/*
+pdfs/*
+html2any-cmd-windows/*
